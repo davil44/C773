@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function changeImage() {
+            const img = document.getElementById('birdImage');
+            const rectangles = document.getElementById('infoRectangles');
+
+            // Get only the filename from the src
+            const currentSrc = img.src.split('/').pop();
+
+            // Toggle image source based on the filename
+            if (currentSrc === 'Bird_outline.png') {
+                img.src = 'Bird_fill.png'; // Second image
+            } else {
+                img.src = 'Bird_outline.png'; // First image
+            }
+
+            // Show the rectangles
+            rectangles.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Hero Image" class="hero-image">
+        <img src="clogo.png" alt="Company Logo" class="company-logo">
+       <div class="search-container">
+    <input type="text" class="search-box" id="searchInput" placeholder="Search...">
+    <button type="button" class="fetch-button" onclick="performSearch()">Fetch</button>
+</div>
+
+        <div class="hero-text">Evidence-based pet care advice for every pet lover</div>
+        <nav class="dropdown-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cats.html">Cats</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="birds.html" class="active">Birds</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="body-container">
+        <p class="intro-text-large">Need more information to help you make a decision? Click to help bring your aviary pet dreams to life!</p>
+
+        <<div class="centered-image">
+    <img id="birdImage" src="Bird_outline.png" alt="Bird Image" onclick="changeBirdImage()">
+</div>
+
+<div id="infoRectangles">
+    <div id="dietary" class="content-box-mid">
+        <h3 class="box-title">Dietary Needs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula libero nec quam fringilla, sit amet laoreet nisi pretium.
+				<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula libero nec quam fringilla, sit amet laoreet nisi pretium.
+				<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula libero nec quam fringilla, sit amet laoreet nisi pretium.
+				<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula libero nec quam fringilla, sit amet laoreet nisi pretium.
+				</p>
+    </div>
+
+    <div id="activity" class="content-box-mid">
+        <h3 class="box-title">Activity Needs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula libero nec quam fringilla, sit amet laoreet nisi pretium.
+				<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula libero nec quam fringilla, sit amet laoreet nisi pretium.
+				<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula libero nec quam fringilla, sit amet laoreet nisi pretium.
+				<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula libero nec quam fringilla, sit amet laoreet nisi pretium.
+				</p>
+    </div>
+
+    <div id="relational" class="content-box-mid">
+        <h3 class="box-title">Relational Needs</h3>
+        <p>Birds are very intriguing creatures as they can range from birds as small as a Cuban bee hummingbird (about two inches long and a little over 1/20 of an ounce) to as large as an ostrich. While most birds fly, there are some that don't. Birds are amazing and each breed is unique in its own way, particularly when it comes to their relational needs and well-being. <br>Unfortunately, birds can experience sadness and depression just like humans. A number of root causes may be responsible for your bird's depression such as an illness (either physical or mental), losing its companion, or increasingly becoming bored. Some signs to help identify if your bird is experiencing depression may include the following:
+<br>-reduced appetite
+<br>-becoming increasingly irritable
+<br>-aggressive behavior
+<br>-songs have a different, more solemn tone
+<br>Be sure to tell your veterinarian if you see signs of any of these symptoms. Just like many illnesses, identifying and treating the symptoms earlier may drastically increase the lifespan of your birdie.
+</p>
+    </div>
+</div>
+    </div>
+
+    <div class="vertical-nav">
+        <a href="#dietary">Dietary Needs</a>
+        <a href="#activity">Activity Needs</a>
+        <a href="#relational">Relational Needs</a>
+    </div>
+
+    <footer>
+        <div class="footer-icons">
+            <a href="index.html"><img src="home.png" alt="Home Icon"></a>
+            <a href="cats.html"><img src="cat.png" alt="Cats Icon"></a>
+            <a href="dogs.html"><img src="dog.png" alt="Dogs Icon"></a>
+            <a href="birds.html"><img src="bird.png" alt="Birds Icon"></a>
+            <a href="contact.html"><img src="contact.png" alt="Contact Icon"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

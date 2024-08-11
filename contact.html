@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Hero Image" class="hero-image">
+        <img src="clogo.png" alt="Company Logo" class="company-logo">
+       <div class="search-container">
+    <input type="text" class="search-box" id="searchInput" placeholder="Search...">
+    <button type="button" class="fetch-button" onclick="performSearch()">Fetch</button>
+		</div>
+        <div class="hero-text">Evidence-based pet care advice for every pet lover</div>
+        <nav class="dropdown-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cats.html">Cats</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="birds.html">Birds</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="body-container">
+        <div class="intro-text-block">
+            
+			<p>
+			    We understand that getting a pet is a big decision, and we're here to help every step of the way. Whether you’re thinking about adopting a cat, dog, bird, or any other pet, our Pexperts are ready to provide you with the information and support you need to make the right choice for your family and lifestyle.
+            </p>
+            <p>
+                Please fill out the form below with your details, and one of our experienced pet care consultants will reach out to you to discuss your specific needs and how we can help make your pet dream a reality.
+            </p>
+			<p>
+			    Services: virtual consultations and presentations, one-on-one consultations concerning individual pets, group presentations regarding general pet care (can be tailored to the needs of the group)
+            </p> 
+        </div>
+
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <h2>Contact Us</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="timezone">Time Zone:</label>
+                <select id="timezone" name="timezone" required>
+                    <option value="" disabled selected>Select your time zone</option>
+                    <option value="pst">Pacific Standard Time (PST)</option>
+                    <option value="mst">Mountain Standard Time (MST)</option>
+                    <option value="cst">Central Standard Time (CST)</option>
+                    <option value="est">Eastern Standard Time (EST)</option>
+                    <option value="gmt">Greenwich Mean Time (GMT)</option>
+                    <option value="cet">Central European Time (CET)</option>
+                    <option value="ist">India Standard Time (IST)</option>
+                    <!-- Add other time zones as needed -->
+                </select>
+
+                <label for="petname">Pet's Name:</label>
+                <input type="text" id="petname" name="petname" required>
+
+                <label for="pettype">Pet Type:</label>
+                <input type="text" id="pettype" name="pettype" required>
+
+                <label for="petage">Pet Age:</label>
+                <input type="number" id="petage" name="petage" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-icons">
+            <a href="index.html"><img src="home.png" alt="Home Icon"></a>
+            <a href="cats.html"><img src="cat.png" alt="Cats Icon"></a>
+            <a href="dogs.html
