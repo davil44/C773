@@ -1,0 +1,174 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 50px 0;
+    position: relative; /* Allows absolute positioning of the logo */
+    text-align: center;
+}
+
+.hero-image {
+    display: block;
+    margin: 0 auto;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.company-logo {
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom of the header */
+    left: 10px; /* Small sliver of white space on the left */
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.search-container {
+    position: absolute;
+    bottom: 20px; /* Align with the company logo */
+    right: 10px; /* Small sliver of white space on the right */
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.fetch-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #003b6d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+.hero-text {
+    margin-top: 10px;
+    color: #6699CC;
+    font-size: 18px; /* Professional-looking font size */
+    font-family: 'Georgia', serif; /* A professional-looking font */
+}
+
+.dropdown-nav {
+    position: absolute;
+    bottom: -10px; /* Less than an inch below the search box */
+    right: 10px;
+    background-color: white;
+}
+
+.dropdown-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.dropdown-nav ul li {
+    display: inline-block;
+}
+
+.dropdown-nav ul li a {
+    text-decoration: none;
+    color: #6699CC;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-nav ul li a.active {
+    background-color: #6699CC; /* Highlight color */
+    color: white;
+}
+
+.body-container {
+    background-color: #bdbdbd;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro-text {
+    font-family: 'Georgia', serif; /* Professional-looking font */
+    font-size: 16px;
+    color: #003b6d;
+    margin: 0;
+    
+}
+
+.content-box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px; /* Width with a margin on left and right */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    color: #676767;
+    font-family: 'Georgia', serif; /* Professional-looking font */
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 55%;
+    padding-right: 20px;
+}
+
+.image-content {
+    max-width: 35%; /* Adjust as needed */
+    padding-right: 80px;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #ddd; /* Placeholder color */
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #bdbdbd; /* Same as body background color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 20px; /* This adds 20px of space on the left and right of each icon */
+    
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
+}
+
+.footer-icons img:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
